@@ -59,12 +59,14 @@ const userPrompts = [
       { name: "No License", value: "" },
       "Academic Free License v3.0",
       "Apache license 2.0",
+      "Boost Software License 1.0",
       "BSD 3-clause Clear license",
       "Creative Commons license family",
       "GN General Public License v3.0",
       "ISC",
       "MIT",
       "Open Software License 3.0",
+      "PostgreSQL License",
     ],
   },
 ];
@@ -77,7 +79,7 @@ async function writeFile(fileName, data) {
     await fs.writeFile(filePath, data);
     console.log("Readme generated successfully");
   } catch (error) {
-    console.log("Error generating File");
+    console.log("Error generating file");
     console.error(error);
   }
 }
