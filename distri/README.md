@@ -1,15 +1,11 @@
-[![License: Apache license 2.0](https://img.shields.io/badge/License-undefined-blue.svg)](https://opensource.org/licenses/undefined)
 
 
-#na
-
+# undefined
 ## Description
 
-
-na
+undefined
 
 ## Table of Contents
-
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,41 +16,23 @@ na
 
 ## Usage
 
-
-na
+undefined
 
 ## License
 
 
-function renderLicenseSection(license, name) {
-  if (license) {
-    return `${name} is licensed under ${renderLicenseLink(license)}`;
-  } else {
-    return "";
-  }
-}
-Link to license: function renderLicenseLink(license) {
-  if (license) {
-    `[License Link](https://opensource.org/licenses/${licenseBadgeMapping.licenseName})`;
-  } else {
-    return "";
-  }
-}
 
 ## Contribution
 
-
-na
+undefined
 
 ## Tests
 
-
-n
+undefined
 
 ## Questions
 
+Link to my [Github Profile](https://github.com/undefined)
 
-Link to my [Github Profile](https://github.com/na)
-
-If you need to contact me directly, here's my email: na!
+If you need to contact me directly, here's my email: undefined!
   

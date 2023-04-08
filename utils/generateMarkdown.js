@@ -45,8 +45,7 @@ const licenseBadgeMapping = [
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
-    console.log(license);
-    return `[![License: ${license}](https://img.shields.io/badge/License-${licenseBadgeMapping.badgeName}-blue.svg)](https://opensource.org/licenses/${licenseBadgeMapping.licenseName})`;
+    return `[![License: ${license.friendlyName}](https://img.shields.io/badge/License-${license.badgeName}-blue.svg)](https://opensource.org/licenses/${license.licenseName})`;
   } else {
     return "";
   }
@@ -56,7 +55,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
-    `[License Link](https://opensource.org/licenses/${licenseBadgeMapping.licenseName})`;
+    return `[${license.friendlyName}](https://opensource.org/licenses/${license.licenseName})`;
   } else {
     return "";
   }
@@ -65,9 +64,9 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license, name) {
+  console.log(license);
   if (license) {
-    console.log(license);
-    return `${name} is licensed under ${renderLicenseLink(license)}`;
+    return `${name} is licensed under ${renderLicenseLink(license)}.`;
   } else {
     return "";
   }
@@ -75,19 +74,11 @@ function renderLicenseSection(license, name) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  // Code to convert license selected by end user and converts into Badge/License values used by downstream functions.
-  licenseBadgeMapping.forEach((obj) => {
-    if (obj.friendlyName === data.license) {
-      var convertedLicense = obj.licenseName;
-      var convertedBadge = obj.badgeName;
-    }
-  });
+  console.log(data[-1]);
+  let obj = licenseBadgeMapping.find((o) => o.friendlyName === data.license);
+  return `${renderLicenseBadge(obj)}
 
-  return `${renderLicenseBadge(convertedBadge)}
-${console.log(convertedBadge)}
-
-#${data.title}
-
+# ${data.title}
 ## Description
 
 ${data.description}
@@ -107,8 +98,7 @@ ${data.usage}
 
 ## License
 
-${renderLicenseSection(convertedLicense, data.name)}
-Link to license: ${renderLicenseLink(convertedLicense)}
+${renderLicenseSection(obj, data.title)}
 
 ## Contribution
 
