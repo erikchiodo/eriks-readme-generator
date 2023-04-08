@@ -45,6 +45,7 @@ const licenseBadgeMapping = [
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
+    console.log(license);
     return `[![License: ${license}](https://img.shields.io/badge/License-${licenseBadgeMapping.badgeName}-blue.svg)](https://opensource.org/licenses/${licenseBadgeMapping.licenseName})`;
   } else {
     return "";
@@ -65,6 +66,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license, name) {
   if (license) {
+    console.log(license);
     return `${name} is licensed under ${renderLicenseLink(license)}`;
   } else {
     return "";
@@ -73,8 +75,16 @@ function renderLicenseSection(license, name) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `${renderLicenseBadge(data.license)}
+  // Code to convert license selected by end user and converts into Badge/License values used by downstream functions.
+  licenseBadgeMapping.forEach((obj) => {
+    if (obj.friendlyName === data.license) {
+      var convertedLicense = obj.licenseName;
+      var convertedBadge = obj.badgeName;
+    }
+  });
 
+  return `${renderLicenseBadge(convertedBadge)}
+${console.log(convertedBadge)}
 
 #${data.title}
 
@@ -97,8 +107,8 @@ ${data.usage}
 
 ## License
 
-${renderLicenseSection(license, data)}
-Link to license: ${renderLicenseLink(license)}
+${renderLicenseSection(convertedLicense, data.name)}
+Link to license: ${renderLicenseLink(convertedLicense)}
 
 ## Contribution
 
