@@ -1,9 +1,9 @@
 [![License: Apache license 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# NA
+# na
 ## Description
 
-NA
+na
 
 
 ## Table of Contents
@@ -11,39 +11,38 @@ NA
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contribution)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 
 
-## Installation (Technologies Used)
+## Installation
 
-NA
+na
 
 
 ## Usage
 
-N
+na
 
 
 
   ## License
-  NA is licensed under [Apache license 2.0](https://opensource.org/licenses/Apache-2.0).
+  na is licensed under [Apache license 2.0](https://opensource.org/licenses/Apache-2.0).
 
 ## Contributing
 
-AA
-
+undefined
 
 
 ## Tests
 
-NA
+na
 
 
 ## Questions
 
-Link to my [Github Profile](https://github.com/NA)
+Link to my [Github Profile](https://github.com/na)
 
-If you need to contact me directly, here's my email: NA!
+If you need to contact me directly, here's my email: na!
   

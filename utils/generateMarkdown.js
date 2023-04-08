@@ -97,12 +97,12 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contribution)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 
 
-## Installation (Technologies Used)
+## Installation
 
 ${data.installation}
 
@@ -116,7 +116,7 @@ ${renderLicenseSection(obj, data.title)}
 
 ## Contributing
 
-${data.contribution}
+${data.constributing}
 
 
 ## Tests
