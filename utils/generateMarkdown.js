@@ -54,6 +54,9 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  if (!license === "None") {
+    return "";
+  }
   if (license) {
     return `[${license.friendlyName}](https://opensource.org/licenses/${license.licenseName})`;
   } else {
@@ -65,6 +68,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license, name) {
   console.log(license);
+  if (!license === "None") {
+    return "";
+  }
   if (license) {
     return `${name} is licensed under ${renderLicenseLink(license)}.`;
   } else {
