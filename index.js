@@ -6,51 +6,51 @@ const path = require("path");
 
 // TODO: Create an array of questions for user input
 const userPrompts = [
-  //   {
-  //     type: "input",
-  //     name: "title",
-  //     message: "Enter title of your project: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "description",
-  //     message: "Enter description: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "installation",
-  //     message: "Enter installation instruction: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "usage",
-  //     message: "Enter usage information: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "contribution",
-  //     message: "Enter contribution guidelines: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "test",
-  //     message: "Enter test instructions: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "reponame",
-  //     message: "Enter repo name: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "username",
-  //     message: "Enter Github username: ",
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "email",
-  //     message: "Enter your email address: ",
-  //   },
+  {
+    type: "input",
+    name: "title",
+    message: "Enter title of your project: ",
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Enter description: ",
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "Enter installation instruction: ",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Enter usage information: ",
+  },
+  {
+    type: "input",
+    name: "contribution",
+    message: "Enter contribution guidelines: ",
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "Enter test instructions: ",
+  },
+  {
+    type: "input",
+    name: "reponame",
+    message: "Enter repo name: ",
+  },
+  {
+    type: "input",
+    name: "username",
+    message: "Enter Github username: ",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your email address: ",
+  },
   {
     type: "list",
     name: "license",
