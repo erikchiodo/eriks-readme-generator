@@ -72,7 +72,9 @@ function renderLicenseSection(license, name) {
     return "";
   }
   if (license) {
-    return `${name} is licensed under ${renderLicenseLink(license)}.`;
+    return `
+  ## License
+  ${name} is licensed under ${renderLicenseLink(license)}.`;
   } else {
     return "";
   }
@@ -80,6 +82,7 @@ function renderLicenseSection(license, name) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // Hash Map to find JSON object within Array
   let obj = licenseBadgeMapping.find((o) => o.friendlyName === data.license);
   return `${renderLicenseBadge(obj)}
 
@@ -88,30 +91,38 @@ function generateMarkdown(data) {
 
 ${data.description}
 
+
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contribution](#contribution)
+- [Contributing](#contribution)
 - [Tests](#tests)
-- [Questions](#questions)  
+- [Questions](#questions)
+
+
+## Installation (Technologies Used)
+
+${data.installation}
+
 
 ## Usage
 
 ${data.usage}
 
-## License
 
 ${renderLicenseSection(obj, data.title)}
 
-## Contribution
+## Contributing
 
 ${data.contribution}
+
 
 ## Tests
 
 ${data.test}
+
 
 ## Questions
 
