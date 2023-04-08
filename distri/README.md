@@ -1,11 +1,16 @@
-[![License: AFL--3.0](https://img.shields.io/badge/License-AFL--3.0-blue.svg)](https://opensource.org/licenses/AFL--3.0)
+[![License: Apache license 2.0](https://img.shields.io/badge/License-undefined-blue.svg)](https://opensource.org/licenses/undefined)
 
-# undefined
+
+#na
 
 ## Description
-undefined
+
+
+na
 
 ## Table of Contents
+
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -14,9 +19,13 @@ undefined
 - [Questions](#questions)  
 
 ## Usage
-undefined
+
+
+na
 
 ## License
+
+
 function renderLicenseSection(license, name) {
   if (license) {
     return `${name} is licensed under ${renderLicenseLink(license)}`;
@@ -26,20 +35,26 @@ function renderLicenseSection(license, name) {
 }
 Link to license: function renderLicenseLink(license) {
   if (license) {
-    `[License Link](https://opensource.org/licenses/${license})`;
+    `[License Link](https://opensource.org/licenses/${licenseBadgeMapping.licenseName})`;
   } else {
     return "";
   }
 }
 
 ## Contribution
-undefined
+
+
+na
 
 ## Tests
-undefined
+
+
+n
 
 ## Questions
-Link to my [Github Profile](https://github.com/undefined)
 
-If you need to contact me directly, here's my email: undefined!
+
+Link to my [Github Profile](https://github.com/na)
+
+If you need to contact me directly, here's my email: na!
   
