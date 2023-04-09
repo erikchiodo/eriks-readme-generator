@@ -34,6 +34,12 @@ GIVEN a command-line application that accepts user input:
 Click on image to be directed to video of my program:
 [![Application](https://user-images.githubusercontent.com/122952630/230750032-d527bc32-7d8e-46a5-8df3-7b0b6ba5235c.png)](https://drive.google.com/file/d/1VJESLtEPtkibOtqbY87iR6cTRzD-t8El/view)
 
+## Contributors
+Only the author (erik) worked on this assignment
+
+## Tests
+Look at sample readme (in distri) for more context. I tested my code with terminal with several console.logs through the program to ensure each use case I planned to address was covered
+
 ## Links
 
 **Link to deployed application**: [Deployed App]()
