@@ -4,6 +4,8 @@
 
 The goal of this Challenge was to create a command line application that takes user input and generates a ReadMe based on responses to prompts
 
+## User Story
+
 GIVEN a command-line application that accepts user input:
 
     > WHEN I click on the links in the Table of Contents
@@ -28,6 +30,9 @@ GIVEN a command-line application that accepts user input:
     > THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 ## Screenshot
+
+Click on image to be directed to video of my program:
+[![image](/distri/Screenshot.png)](https://drive.google.com/file/d/1VJESLtEPtkibOtqbY87iR6cTRzD-t8El/view)
 
 ## Links
 
