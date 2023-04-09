@@ -32,10 +32,10 @@ GIVEN a command-line application that accepts user input:
 ## Screenshot
 
 Click on image to be directed to video of my program:
-[![image](/distri/Screenshot.png)](https://drive.google.com/file/d/1VJESLtEPtkibOtqbY87iR6cTRzD-t8El/view)
+[![Application](https://user-images.githubusercontent.com/122952630/230750032-d527bc32-7d8e-46a5-8df3-7b0b6ba5235c.png)](https://drive.google.com/file/d/1VJESLtEPtkibOtqbY87iR6cTRzD-t8El/view)
 
 ## Links
 
 **Link to deployed application**: [Deployed App]()
 
-**Github URL**: No Link to URL (exclusively a command-line application)
+**Github URL**: https://github.com/erikchiodo/eriks-readme-generator
